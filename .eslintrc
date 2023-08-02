@@ -8,8 +8,9 @@
     "ecmaVersion": 2020,
     "sourceType": "module"
   },
-  "plugins": ["@typescript-eslint", "simple-import-sort", "import", "react", "react-memo", "react-hooks"],
+  "plugins": ["@typescript-eslint", "import", "simple-import-sort", "react", "react-memo", "react-hooks"],
   "extends": [
+    "next",
     "eslint:recommended",
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
@@ -20,6 +21,8 @@
   "rules": {
     "react/display-name": "off",
     // The next two rules should be errors. But for now we"ll leave them as warnings since this will take a while
+    "react/no-unescaped-entities": "off",
+    "@next/next/no-page-custom-font": "off",
     "react-memo/require-usememo": "error",
     "react-memo/require-memo": "error",
     "react-hooks/rules-of-hooks": "error",
@@ -43,7 +46,6 @@
     "react/jsx-no-duplicate-props": "error",
     "react/jsx-sort-props": "error",
     "react/react-in-jsx-scope": "off",
-    "react/no-unescaped-entities": "off",
     "simple-import-sort/exports": "error",
     "simple-import-sort/imports": "error",
     "sort-imports": "off",

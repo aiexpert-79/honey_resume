@@ -1,31 +1,22 @@
-import {
-  AcademicCapIcon,
-  ArrowDownTrayIcon,
-  BuildingOffice2Icon,
-  CalendarIcon,
-  FlagIcon,
-  MapIcon,
-  SparklesIcon,
-} from '@heroicons/react/24/outline';
-
+import {AcademicCapIcon, ArrowDownTrayIcon, BuildingOffice2Icon, CalendarIcon, FlagIcon, MapIcon, SparklesIcon} from '@heroicons/react/24/outline';
 import GithubIcon from '../components/Icon/GithubIcon';
 import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
 import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/header-background.webp';
-import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
-import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
-import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
-import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
-import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
-import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
-import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
-import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
-import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
-import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
-import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
-import profilepic from '../images/Honey.jpg';
+import portfolioImage1 from '../images/portfolio/portfolio-1.jpg';
+import portfolioImage2 from '../images/portfolio/portfolio-2.jpg';
+import portfolioImage3 from '../images/portfolio/portfolio-3.jpg';
+import portfolioImage4 from '../images/portfolio/portfolio-4.jpg';
+import portfolioImage5 from '../images/portfolio/portfolio-5.jpg';
+import portfolioImage6 from '../images/portfolio/portfolio-6.jpg';
+import portfolioImage7 from '../images/portfolio/portfolio-7.jpg';
+import portfolioImage8 from '../images/portfolio/portfolio-8.jpg';
+import portfolioImage9 from '../images/portfolio/portfolio-9.jpg';
+import portfolioImage10 from '../images/portfolio/portfolio-10.jpg';
+import portfolioImage11 from '../images/portfolio/portfolio-11.jpg';
+import avatar from '../images/Honey.jpg';
 import testimonialImage from '../images/testimonial.webp';
 import {
   About,
@@ -69,16 +60,16 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Honey Moharry.`,
+  name: `Honey Moharry`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        Sydney based <strong className="text-stone-100">Machine Learning & Quantum Computing Software Engineer</strong>
+        <strong className="text-stone-100">Sydney</strong> based <strong className="text-stone-100">Machine Learning & Quantum Computing Software Engineer</strong>
         <br></br> currently working at <strong className="text-stone-100">Silicon Quantum Computing (SQC)</strong>
         <br></br> building powerful quantum software and algorithms.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        <strong className="text-stone-100">Self-motivated and team player</strong> with strong{' '}
+        <strong className="text-stone-100">Self-motivated and team player</strong> with strong{' '}<br></br>
         <strong className="text-stone-100">organizational and interpersonal</strong>, skills.
       </p>
     </>
@@ -102,7 +93,7 @@ export const heroData: Hero = {
  * About section
  */
 export const aboutData: About = {
-  profileImageSrc: profilepic,
+  profileImageSrc: avatar,
   description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
   to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
   in.`,
@@ -129,7 +120,7 @@ export const skills: SkillGroup[] = [
       },
       {
         name: 'Chinese',
-        level: 3,
+        level: 5,
       },
     ],
   },
@@ -146,7 +137,7 @@ export const skills: SkillGroup[] = [
       },
       {
         name: 'Tensorflow',
-        level: 6,
+        level: 8,
       },
     ],
   },
@@ -155,11 +146,11 @@ export const skills: SkillGroup[] = [
     skills: [
       {
         name: 'Machine Learning',
-        level: 8,
+        level: 9,
       },
       {
         name: 'Neural Network',
-        level: 5,
+        level: 7,
       },
       {
         name: 'API',
@@ -176,11 +167,11 @@ export const skills: SkillGroup[] = [
       },
       {
         name: 'Backend Development',
-        level: 7,
+        level: 8,
       },
       {
         name: 'Mobile Development',
-        level: 4,
+        level: 6,
       },
     ],
   },
@@ -191,70 +182,70 @@ export const skills: SkillGroup[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: 'Project title 1',
+    title: 'Multi media analysis',
     description: 'Give a short description of your project here.',
-    url: 'https://honey.me',
-    image: porfolioImage1,
+    url: 'https://github.com/aiexpert-79/media.git',
+    image: portfolioImage1,
   },
   {
-    title: 'Project title 2',
+    title: 'Stable Diffusion',
     description: 'Give a short description of your project here.',
-    url: 'https://honey.me',
-    image: porfolioImage2,
+    url: 'https://github.com/aiexpert-79/diffusion_analysis.git',
+    image: portfolioImage2,
   },
   {
-    title: 'Project title 3',
+    title: 'Bucket Brigade Quantify',
     description: 'Give a short description of your project here.',
-    url: 'https://honey.me',
-    image: porfolioImage3,
+    url: 'https://github.com/aiexpert-79/bucket_bridge_qram_circuit.git',
+    image: portfolioImage3,
   },
   {
-    title: 'Project title 4',
+    title: 'Quantum Computer',
     description: 'Give a short description of your project here.',
-    url: 'https://honey.me',
-    image: porfolioImage4,
+    url: 'https://github.com/aiexpert-79/qc_computer.git',
+    image: portfolioImage4,
   },
   {
-    title: 'Project title 5',
+    title: 'Traffic Surveillance',
     description: 'Give a short description of your project here.',
-    url: 'https://honey.me',
-    image: porfolioImage5,
+    url: 'https://github.com/aiexpert-79/Traffic-Rule-Violation-Detection-System.git',
+    image: portfolioImage5,
   },
   {
-    title: 'Project title 6',
+    title: 'Emotion Detection Bot',
     description: 'Give a short description of your project here.',
-    url: 'https://honey.me',
-    image: porfolioImage6,
+    url: 'https://github.com/aiexpert-79/emotion_detection.git',
+    image: portfolioImage6,
   },
   {
-    title: 'Project title 7',
+    title: 'Chat Bot',
     description: 'Give a short description of your project here.',
-    url: 'https://honey.me',
-    image: porfolioImage7,
+    url: 'https://github.com/aiexpert-79/AI_Chatbot.git',
+    image: portfolioImage7,
   },
   {
-    title: 'Project title 8',
+    title: 'Car recognition system',
     description: 'Give a short description of your project here.',
-    url: 'https://honey.me',
-    image: porfolioImage8,
+    url: 'https://github.com/aiexpert-79/car_recognition.git',
+    image: portfolioImage8,
   },
   {
-    title: 'Project title 9',
+    title: 'Stock Price Prediction',
     description: 'Give a short description of your project here.',
-    url: 'https://honey.me',
-    image: porfolioImage9,
+    url: 'https://github.com/aiexpert-79/stock.git',
+    image: portfolioImage9,
   },
   {
-    title: 'Project title 10',
+    title: 'My chair',
     description: 'Give a short description of your project here.',
     url: 'https://honey.me',
-    image: porfolioImage10,
+    image: portfolioImage10,
   },
   {
-    title: 'Project title 11',
+    title: 'Ny Workplace',
     description: 'Give a short description of your project here.',
     url: 'https://honey.me',
-    image: porfolioImage11,
+    image: portfolioImage11,
   },
 ];
 
@@ -263,16 +254,16 @@ export const portfolioItems: PortfolioItem[] = [
  */
 export const education: TimelineItem[] = [
   {
-    date: 'April 2011',
+    date: 'April 2011 - March 2013',
     location: 'Macquarie University',
     title: 'Bachelor degree on Computer Science',
     content: <p>Weller Scholarship, Achieved 4.3 GPA.</p>,
   },
   {
-    date: 'March 2003',
+    date: 'March 2005 - June 2010',
     location: 'School of Business',
-    title: 'What did you study 101',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    title: 'Full marks',
+    content: <p>Studied 20+ subjects, Top 1% among 2000+ pupils.</p>,
   },
 ];
 
@@ -310,7 +301,7 @@ export const testimonial: TestimonialSection = {
   imageSrc: testimonialImage,
   testimonials: [
     {
-      name: 'John Doe',
+      name: 'Max Sender',
       text: 'Use this as an opportunity to promote what it is like to work with you. High value testimonials include ones from current or past co-workers, managers, or from happy clients.',
       image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
     },
@@ -320,7 +311,7 @@ export const testimonial: TestimonialSection = {
       image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg',
     },
     {
-      name: 'Someone else',
+      name: 'Philip Michel',
       text: 'Add several of these, and keep them as fresh as possible, but be sure to focus on quality testimonials with strong highlights of your skills/work ethic.',
       image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
     },
@@ -337,13 +328,13 @@ export const contact: ContactSection = {
   items: [
     {
       type: ContactType.Email,
-      text: 'reachout@honey.me',
-      href: 'mailto:reachout@honey.me',
+      text: 'hmh19980907@gmail.com',
+      href: 'mailto:hmh19980907@gmail.com',
     },
     {
       type: ContactType.Location,
-      text: 'Victoria BC, Canada',
-      href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
+      text: 'Sydney NSW, Australia',
+      href: 'https://www.google.ca/maps/place/Sydney,+NSW/@48.4262362,-123.376775,14z',
     },
     {
       type: ContactType.Instagram,
@@ -353,7 +344,7 @@ export const contact: ContactSection = {
     {
       type: ContactType.Github,
       text: 'honey',
-      href: 'https://github.com/honey',
+      href: 'https://github.com/aiexpert-79',
     },
   ],
 };
@@ -362,9 +353,9 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/hmh19980907'},
+  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/aiexpert-79'},
   {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/honey'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/honey/'},
+  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/au/honey/'},
   {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/honey/'},
   {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/honey'},
 ];
