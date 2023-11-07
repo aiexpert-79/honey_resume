@@ -64,7 +64,7 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        <strong className="text-stone-100">Sydney</strong> based <strong className="text-stone-100">Machine Learning & Quantum Computing Software Engineer</strong>
+        <strong className="text-stone-100">Hong Kong</strong> based <strong className="text-stone-100">Machine Learning & Quantum Computing Software Engineer</strong>
         <br></br> currently working at <strong className="text-stone-100">Silicon Quantum Computing (SQC)</strong>
         <br></br> building powerful quantum software and algorithms.
       </p>
